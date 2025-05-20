@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  padding: 40px;
+}
+
+main {
+  max-width: 960px;
+  background: #fff;
+  margin: auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho */
+.cabeçalho {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.titulo h1 {
+
+  font-size: 50px;
+  margin-bottom: 4px;
+  margin-top: 40px;
+}
+
+.titulo p {
+  font-size: 20px;
+  text-align: end;
+  margin-right: 16px;
+  color: #777;
+}
+
+.contato {
+  border-top: 1px solid #b3b3b3;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 90px;
+  gap: 40px;
+  font-size: 12px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+/* Seção principal */
+.principal_coluna {
+  display: grid;
+  grid-template-columns: 30% 64%;
+  gap: 50px;
+
+}
+
+.coluna-direita{
+  text-align: justify;
+}
+
+/* Coluna esquerda */
+.endereço {
+  font-size: 14px;
+  color: #555;
+}
+
+img{
+  width: 100px;
+
+}
+
+.seção-perfil{
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 2px solid #6b6b6b;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+  margin-top: 30px;
+}
+
+
+.seção {
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 2px solid #fdd835;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+  margin-top: 30px;
+}
+
+
+.edu-item, .job-item {
+  display: contents;
+}
+
+.data {
+  margin-top: 30px;
+  font-size: 13px;
+  color: #777;
+}
+
+.edu-nome, .job-nome {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+
+  .titulo {
+    text-align: center;
+    flex-basis: 100%;
+    margin-top: 20px;
+  }
+
+  .titulo h1 {
+    font-size: clamp(26px, 6vw, 40px);
+    margin: 0;
+  }
+
+  .titulo p {
+    font-size: clamp(14px, 3vw, 18px);
+    text-align: center;
+    margin: 10px auto 20px auto;
+  }
+
+  /* Centralizar contato */
+  .contato {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    gap: 10px;
+  }
+
+  /* Empilhar cada item da coluna esquerda com a direita */
+
+
+
+
+  /* Responsividade dos textos */
+  .seção,
+  .seção-perfil {
+    font-size: clamp(16px, 3vw, 20px);
+    margin-top: 20px;
+  }
+
+  .data,
+  .endereço,
+  p,
+  .edu-nome,
+  .job-nome {
+    font-size: clamp(13px, 2.5vw, 15px);
+  }
+
+  img {
+    width: 80px;
+    height: auto;
+  }
+}

@@ -133,7 +133,6 @@ p {
     margin: 10px auto 20px auto;
   }
 
-  /* Centralizar contato */
   .contato {
     justify-content: center;
     flex-direction: column;
@@ -142,13 +141,6 @@ p {
     margin-top: 40px;
     gap: 10px;
   }
-
-  /* Empilhar cada item da coluna esquerda com a direita */
-
-
-
-
-  /* Responsividade dos textos */
   .seção,
   .seção-perfil {
     font-size: clamp(16px, 3vw, 20px);

@@ -6,8 +6,8 @@ Esse é um projeto de página web utilizando HTML e CSS.Trata-se de uma página 
 
 ## Autores
 
-Thiago Ramos Xavier
+Vitor Venancio Silva
 
 ## Contato
 
-thiago.engenhariaif@gmail.com
+venancio.eng.ifmg@gmail.com

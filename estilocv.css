@@ -116,6 +116,12 @@ p {
 
 @media (max-width: 1024px) {
 
+
+  .cabeçalho{
+  display: flex;
+  flex-direction: columns;
+  align-items: center;
+  }
   .titulo {
     text-align: center;
     flex-basis: 100%;
